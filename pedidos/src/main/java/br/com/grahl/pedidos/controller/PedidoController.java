@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.grahl.pedidos.domain.Pedido;
 import br.com.grahl.pedidos.service.PedidoService;
+import br.com.grahl.pojos.Pedido;
 
 @RestController
 public class PedidoController {

@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.grahl.clientes.domain.Cliente;
-import br.com.grahl.clientes.domain.Pedido;
 import br.com.grahl.clientes.service.ClienteService;
 import br.com.grahl.clientes.service.PedidoService;
+import br.com.grahl.pojos.Pedido;
 
 @RestController
 public class ClienteController {

@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-import br.com.grahl.clientes.domain.Pedido;
+import br.com.grahl.pojos.Pedido;
 
 @Service
 @Profile("prod")

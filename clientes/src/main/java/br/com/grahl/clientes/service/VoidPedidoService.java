@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-import br.com.grahl.clientes.domain.Pedido;
+import br.com.grahl.pojos.Pedido;
 
 @Service
 @Profile({"test", "dev"})
@@ -20,14 +20,14 @@ public class VoidPedidoService implements PedidoService {
 		Pedido pedido = new Pedido();
 		pedido.setId("1");
 		pedido.setIdCliente("1");
-		pedido.setValor(123.4);
+		pedido.setValor(123.4f);
 		
 		pedidos.add(pedido);
 		
 		Pedido pedido2 = new Pedido();
 		pedido2.setId("2");
 		pedido2.setIdCliente("1");
-		pedido2.setValor(555.3);
+		pedido2.setValor(555.3f);
 		
 		pedidos.add(pedido2);
 		
