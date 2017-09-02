@@ -1,0 +1,1 @@
+insert into clientes(id, nome, endereco, data_criacao, data_alteracao) values ('1', 'cliente1', 'endereco', '2017-08-12 12:00:00', null)
