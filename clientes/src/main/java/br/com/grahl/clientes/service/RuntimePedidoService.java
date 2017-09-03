@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import br.com.grahl.pojos.Pedido;
 
 @Service
-@Profile("prod")
+@Profile("production")
 public class RuntimePedidoService implements PedidoService {
 
 	@Override

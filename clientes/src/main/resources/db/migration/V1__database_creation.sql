@@ -1,0 +1,1 @@
+create table clientes (id varchar(255) not null, data_alteracao TIMESTAMP, data_criacao TIMESTAMP, endereco varchar(200), nome varchar(100) not null, primary key (id));
