@@ -1,9 +1,9 @@
-package br.com.grahl.clientes.security.security.repository;
+package br.com.grahl.clientes.security.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-import br.com.grahl.clientes.security.model.security.User;
+import br.com.grahl.clientes.domain.User;
 
 /**
  * Created by stephan on 20.03.16.

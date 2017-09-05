@@ -1,4 +1,4 @@
-package br.com.grahl.clientes.security.security;
+package br.com.grahl.clientes.security;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

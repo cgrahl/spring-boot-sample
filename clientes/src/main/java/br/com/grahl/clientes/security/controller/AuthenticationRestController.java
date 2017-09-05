@@ -1,4 +1,6 @@
-package br.com.grahl.clientes.security.security.controller;
+package br.com.grahl.clientes.security.controller;
+
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -16,7 +18,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletRequest;
+import br.com.grahl.clientes.security.JwtAuthenticationRequest;
+import br.com.grahl.clientes.security.JwtTokenUtil;
+import br.com.grahl.clientes.security.JwtUser;
+import br.com.grahl.clientes.security.service.JwtAuthenticationResponse;
 
 @RestController
 public class AuthenticationRestController {

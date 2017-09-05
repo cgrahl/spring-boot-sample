@@ -1,4 +1,4 @@
-package br.com.grahl.clientes.security.security;
+package br.com.grahl.clientes.security;
 
 import java.io.Serializable;
 import java.util.Date;

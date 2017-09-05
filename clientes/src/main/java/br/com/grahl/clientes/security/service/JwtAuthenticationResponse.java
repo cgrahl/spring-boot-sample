@@ -1,4 +1,4 @@
-package br.com.grahl.clientes.security.security.service;
+package br.com.grahl.clientes.security.service;
 
 import java.io.Serializable;
 

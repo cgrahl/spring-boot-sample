@@ -1,4 +1,4 @@
-package br.com.grahl.clientes.security.security.service;
+package br.com.grahl.clientes.security.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -6,9 +6,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import br.com.grahl.clientes.security.model.security.User;
-import br.com.grahl.clientes.security.security.JwtUserFactory;
-import br.com.grahl.clientes.security.security.repository.UserRepository;
+import br.com.grahl.clientes.domain.User;
+import br.com.grahl.clientes.security.JwtUserFactory;
+import br.com.grahl.clientes.security.repository.UserRepository;
 
 /**
  * Created by stephan on 20.03.16.

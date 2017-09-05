@@ -1,4 +1,4 @@
-package br.com.grahl.clientes.security.model.security;
+package br.com.grahl.clientes.domain;
 
 import java.util.Date;
 import java.util.List;

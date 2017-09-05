@@ -1,4 +1,4 @@
-package br.com.grahl.clientes.security.security;
+package br.com.grahl.clientes.security;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;

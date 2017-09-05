@@ -15,8 +15,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import br.com.grahl.clientes.security.security.JwtAuthenticationEntryPoint;
-import br.com.grahl.clientes.security.security.JwtAuthenticationTokenFilter;
+import br.com.grahl.clientes.security.JwtAuthenticationEntryPoint;
+import br.com.grahl.clientes.security.JwtAuthenticationTokenFilter;
 
 @SuppressWarnings("SpringJavaAutowiringInspection")
 @Configuration

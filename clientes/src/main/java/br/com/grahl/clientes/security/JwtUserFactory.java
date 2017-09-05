@@ -1,4 +1,4 @@
-package br.com.grahl.clientes.security.security;
+package br.com.grahl.clientes.security;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -6,8 +6,8 @@ import java.util.stream.Collectors;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
-import br.com.grahl.clientes.security.model.security.Authority;
-import br.com.grahl.clientes.security.model.security.User;
+import br.com.grahl.clientes.domain.Authority;
+import br.com.grahl.clientes.domain.User;
 
 public final class JwtUserFactory {
 
