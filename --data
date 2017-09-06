@@ -1,0 +1,2 @@
+{"timestamp":1504648957300,"status":400,"error":"Bad Request","exception":"org.springframework.http.converter.HttpMessageNotReadableException","message":"Required request body is missing: public org.springframework.http.ResponseEntity<?> br.com.grahl.clientes.security.controller.AuthenticationRestController.createAuthenticationToken(br.com.grahl.clientes.security.JwtAuthenticationRequest,org.springframework.mobile.device.Device) throws org.springframework.security.core.AuthenticationException","path":"/auth"}--_curl_--"username": "admin"
+--_curl_-- "password": "admin"
