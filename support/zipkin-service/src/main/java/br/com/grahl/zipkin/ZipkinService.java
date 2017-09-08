@@ -1,15 +1,17 @@
-package br.com.grahl.clientes;
+package br.com.grahl.zipkin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import zipkin.server.EnableZipkinServer;
 
-@SpringBootApplication
 @EnableDiscoveryClient
-
-public class ClientesApplication {
+@EnableZipkinServer
+@SpringBootApplication
+public class ZipkinService {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ClientesApplication.class, args);
+		SpringApplication.run(ZipkinService.class, args);
 	}
+
 }

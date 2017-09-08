@@ -1,15 +1,17 @@
-package br.com.grahl.clientes;
+package br.com.grahl.hystrix.dashboard;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 
-@SpringBootApplication
 @EnableDiscoveryClient
-
-public class ClientesApplication {
+@EnableHystrixDashboard
+@SpringBootApplication
+public class HystrixDashboard {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ClientesApplication.class, args);
+		SpringApplication.run(HystrixDashboard.class, args);
 	}
+
 }
