@@ -1,0 +1,37 @@
+info:
+  component: Zuul Server
+
+spring:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:9999/uaa/user
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+#zuul:
+#  ignoredServices: "*"
+#  routes:
+#    clientes: /clientes/**
+zuul:
+  routes:
+    clientes:
+      path: /clientes/**
+      url: http://localhost:8000
+    pedidos:
+      path: /pedidos/**
+      url: http://localhost:8081
+    user:
+      path: /user/**
+      url: http://localhost:9999/uaa/user
+  sensitiveHeaders: Cookie,Set-Cookie
+    
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: INFO

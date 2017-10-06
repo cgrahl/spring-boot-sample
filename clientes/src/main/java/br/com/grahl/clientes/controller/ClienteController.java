@@ -38,7 +38,9 @@ public class ClienteController {
 	}
 	
 	@RequestMapping("/cliente/{idCliente}/pedidos")
-	public List<Pedido> getPedidosCliente(@PathVariable(value="idCliente") String idCliente) {
+	public List<Pedido> getPedidosCliente(@PathVariable(value="idCliente")  String idCliente, @RequestHeader(value="Authorization") String authorizationHeader,
+	        Principal currentUser) {
+		System.out.println(currentUser.getName());
 		return pedidoService.getPedidosByIdCliente(idCliente);
 	}
 

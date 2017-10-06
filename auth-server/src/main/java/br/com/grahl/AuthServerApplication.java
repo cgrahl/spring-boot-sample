@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 @EnableResourceServer
+@EnableAuthorizationServer
 public class AuthServerApplication {
 
 	@RequestMapping("/user")

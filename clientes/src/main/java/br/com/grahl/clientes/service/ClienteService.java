@@ -1,6 +1,7 @@
 package br.com.grahl.clientes.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,9 +27,9 @@ public class ClienteService {
 		return repository.findAllByOrderByNome();
 	}
 	
-	public Cliente get(String id) {
+	public Optional<Cliente> get(String id) {
 		LOGGER.debug("get cliente: {}", id);
-		return repository.findOne(id);
+		return repository.findById(id);
 	}
 	
 	public void update(Cliente cliente) {
@@ -36,7 +37,7 @@ public class ClienteService {
 	}
 	
 	public void delete(String id) {
-		repository.delete(id);
+		repository.deleteById(id);
 	}
 	
 	public Cliente insert(Cliente cliente) {

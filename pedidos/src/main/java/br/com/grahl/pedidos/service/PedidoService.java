@@ -2,6 +2,7 @@ package br.com.grahl.pedidos.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.StreamSupport;
 
 import org.modelmapper.ModelMapper;
@@ -39,8 +40,8 @@ public class PedidoService {
 	
 	public Pedido get(String id) {
 		LOGGER.debug("get pedido: {}", id);
-		br.com.grahl.pedidos.domain.Pedido pedidoDomain = repository.findOne(id);
-		return toPojo(pedidoDomain);
+		Optional<br.com.grahl.pedidos.domain.Pedido> pedidoDomain = repository.findById(id);
+		return toPojo(pedidoDomain.get());
 	}
 	
 	public void update(Pedido pedido) {
@@ -49,7 +50,7 @@ public class PedidoService {
 	}
 	
 	public void delete(String id) {
-		repository.delete(id);
+		repository.deleteById(id);
 	}
 	
 	public Pedido insert(Pedido pedido) {

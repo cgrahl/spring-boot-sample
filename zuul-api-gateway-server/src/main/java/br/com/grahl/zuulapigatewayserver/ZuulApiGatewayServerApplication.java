@@ -1,16 +1,16 @@
-package br.com.grahl.pedidos;
+package br.com.grahl.zuulapigatewayserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
-@SpringBootApplication	
+@EnableZuulProxy
 @EnableDiscoveryClient
-//@EnableResourceServer
-public class PedidosApplication {
+@SpringBootApplication
+public class ZuulApiGatewayServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PedidosApplication.class, args);
+		SpringApplication.run(ZuulApiGatewayServerApplication.class, args);
 	}
 }
-	
