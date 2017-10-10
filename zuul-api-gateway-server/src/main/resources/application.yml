@@ -14,21 +14,15 @@ endpoints:
   health:
     sensitive: false
 
-#zuul:
-#  ignoredServices: "*"
-#  routes:
-#    clientes: /clientes/**
 zuul:
+  ignoredServices: "*"
   routes:
     clientes:
       path: /clientes/**
-      url: http://localhost:8000
     pedidos:
       path: /pedidos/**
-      url: http://localhost:8081
     user:
       path: /user/**
-      url: http://localhost:9999/uaa/user
   sensitiveHeaders: Cookie,Set-Cookie
     
 logging:
