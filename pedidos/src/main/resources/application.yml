@@ -13,12 +13,10 @@ management:
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
-    metadataMap:
-      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
+    instance-id: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}} 
 
   client:
     registryFetchIntervalSeconds: 5
+    register-with-eureka: true
+    fetch-registry: true
 
-logging:
-  level:
-    se.callista: INFO
