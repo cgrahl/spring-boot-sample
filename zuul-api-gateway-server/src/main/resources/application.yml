@@ -21,8 +21,6 @@ zuul:
       path: /clientes/**
     pedidos:
       path: /pedidos/**
-    user:
-      path: /user/**
   sensitiveHeaders: Cookie,Set-Cookie
     
 logging:

@@ -9,20 +9,11 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.grahl.clientes.domain.Cliente;
-import br.com.grahl.clientes.service.ClienteService;
 import br.com.grahl.clientes.service.PedidoService;
 import br.com.grahl.pojos.Pedido;
 
 @RestController
 public class ClienteController {
-	
-	private ClienteService clienteService;
-	
-	@Autowired
-	public void setClienteService(ClienteService clienteService) {
-		this.clienteService = clienteService;
-	}
 	
 	private PedidoService pedidoService;
 	
@@ -31,10 +22,11 @@ public class ClienteController {
 		this.pedidoService = pedidoService;
 	}
 	
-	@RequestMapping("/")
-	public List<Cliente> getAll(@RequestHeader(value="Authorization") String authorizationHeader,
-	        Principal currentUser) {
-		return clienteService.getAll();
+
+	@RequestMapping("/anon/")
+	public String getAll() {
+		System.out.println("getAll");
+		return "Lista com todos os clientes";
 	}
 	
 	@RequestMapping("/cliente/{idCliente}/pedidos")
