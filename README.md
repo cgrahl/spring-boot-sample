@@ -13,11 +13,11 @@ Os serviços devem ser iniciados nesta ordem:
 
 ## Login:
 
-Fazer uma chamada curl -s acme:acmesecret@localhost:9999/uaa/oauth/token  \
- -d grant_type=password \
- -d client_id=acme \
- -d scope=webshop \
- -d username=user \
+Fazer uma chamada curl -s acme:acmesecret@localhost:9999/uaa/oauth/token  \\
+ -d grant_type=password \\
+ -d client_id=acme \\
+ -d scope=webshop \\
+ -d username=user \\
  -d password=password
  
 E o retorno é um token no seguinte formato:
@@ -37,5 +37,11 @@ Authorization: Bearer <access_token>
 Por exemplo:
 
 Authorization: Bearer 62ca1eb0-b2a1-4f66-bcf4-2c0171bbb593
+
+ou:
+
+curl 'http://localhost:8765/clientes/cliente/1/pedidos' -H "Authorization: Bearer $TOKEN" -s
+
+
  
  
